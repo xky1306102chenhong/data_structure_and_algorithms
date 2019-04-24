@@ -2,4 +2,4 @@
 ==========  
 
 + 思路：  
-![avatar](DP/images/minimum-path-sum.jpeg)
+![avatar](../images/minimum-path-sum.jpeg)
