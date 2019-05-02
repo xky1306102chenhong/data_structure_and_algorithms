@@ -1,0 +1,15 @@
+/**
+ * @author Chris Chen
+ * @date 2019/5/2 下午6:43
+ */
+public class FibonacciRecursive {
+    public int fibonacci(int n){
+        if(n == 0){
+            return 0;
+        }
+        if(n == 1){
+            return 1;
+        }
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
