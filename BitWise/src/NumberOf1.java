@@ -1,5 +1,3 @@
-import java.util.concurrent.Semaphore;
-
 /**
  * @author Chris Chen
  * @date 2019/5/3 上午9:49
@@ -7,12 +5,13 @@ import java.util.concurrent.Semaphore;
 public class NumberOf1 {
     public static int numberOf1(int n){
         int ans =0;
-        while (n!=0){
-            int tmp = n & 1;
-            if(tmp==1){
+        int flag = 1;
+        while (flag != 0){
+            int tmp = n & flag;
+            if(tmp==flag){
                 ans++;
             }
-            n=n>>1;
+            flag=flag<<1;
         }
         return ans;
     }
